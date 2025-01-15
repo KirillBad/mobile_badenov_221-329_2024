@@ -1,0 +1,51 @@
+﻿<Window x:Class="wpfStyleTriggersEvent.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wpfStyleTriggersEvent"
+        mc:Ignorable="d"
+        Title="wpfStyleTriggersEvent" Height="450" Width="300">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Height" Value="50"/>
+            <Style.Triggers>
+                <EventTrigger RoutedEvent="MouseEnter"> <!--Когда перересекли границу элемента-->
+                    <BeginStoryboard> <!--Последовательность анимации которую надо запустить--> 
+                        <Storyboard> <!--Что будет анимироваться-->
+                            <DoubleAnimation Storyboard.TargetProperty="FontSize"
+                                             To="30" Duration="0:0:0:0.5"/>
+                            <DoubleAnimation Storyboard.TargetProperty="Height"
+                                             To="70" Duration="0:0:0:0.5"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+
+                <EventTrigger RoutedEvent="MouseLeave">
+                    <!--Когда перересекли границу элемента-->
+                    <BeginStoryboard>
+                        <!--Последовательность анимации которую надо запустить-->
+                        <Storyboard>
+                            <!--Что будет анимироваться-->
+                            <DoubleAnimation Storyboard.TargetProperty="FontSize"
+                                             To="14" Duration="0:0:0:0.5"/>
+                            <DoubleAnimation Storyboard.TargetProperty="Height"
+                                             To="50" Duration="0:0:0:0.5"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+
+    <StackPanel>
+        <Button Content="Кнопка 1"/>
+        <Button Content="Кнопка 2"/>
+        <Button Content="Кнопка 3"/>
+        <Button Content="Кнопка 4"/>
+        <Button Content="Кнопка 5"/>
+        <Button Content="Кнопка 6"/>
+
+    </StackPanel>
+</Window>

@@ -1,0 +1,25 @@
+﻿<Window x:Class="wpfWindowResources.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wpfWindowResources"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="300">
+    <Window.Resources>
+        <SolidColorBrush x:Key="baachground_play" Color="LightCoral"/>
+    </Window.Resources>
+    <StackPanel>
+        <Button Content="1" Background="LightGreen"/>
+        <Button Content="2" Background="LightGreen"/>
+        <Button Content="3" Background="{StaticResource baachground_play}"/>
+        <!--Если static то значение baachground_play просто копируется в свойство 
+        Background и мы про существование ресурса просто забываем-->
+        
+        <!--Если мы загружаем данные через dynamic то у нас сохраняется ссылка на этот ресурс. 
+        Это значит что если значение в Color будет меняться то это повлечет изменение всех 
+        элементов которые загружают этот ресурс через конструкцию dynamic.-->
+        <Button Content="4" Background="{DynamicResource baachground_play}"/>
+        <Button Content="Change" Click="Button_Click"/>
+    </StackPanel>
+</Window>

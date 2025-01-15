@@ -1,0 +1,33 @@
+﻿<Window x:Class="WpfStyleTriggers.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfStyleTriggers"
+        mc:Ignorable="d"
+        Title="wpfStyleTriggers" Height="450" Width="300">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Height" Value="50"/>
+            <Style.Triggers>
+                <Trigger Property="IsFocused" Value="True">
+                    <Setter Property="FontSize" Value="20"/>
+                </Trigger>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Foreground" Value="red"/>
+                    <Setter Property="Margin" Value="20,0,20,0"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+
+    <StackPanel>
+        <Button Content="Кнопка 1"/>
+        <Button Content="Кнопка 2"/>
+        <Button Content="Кнопка 3" IsCancel="True" Click="Button_Click"/> <!--При нажатии на Escape, кнопка по умолчанию для отмены-->
+        <Button Content="Кнопка 4" IsDefault="True" Click="Button_Click_1"/> <!--Если пользователь ничего не делая нажмет на кнопку Enter--> 
+        <Button Content="Кнопка 5"/>
+        <Button Content="Кнопка 6"/>
+
+    </StackPanel>
+</Window>

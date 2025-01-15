@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35431.28
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wpfStyleTriggersEvent", "wpfStyleTriggersEvent\wpfStyleTriggersEvent.csproj", "{1ACF77C8-BF42-424A-81A3-CB29C0D71ED6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1ACF77C8-BF42-424A-81A3-CB29C0D71ED6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ACF77C8-BF42-424A-81A3-CB29C0D71ED6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ACF77C8-BF42-424A-81A3-CB29C0D71ED6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ACF77C8-BF42-424A-81A3-CB29C0D71ED6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8B6E0EF2-125E-41CD-BB10-16F0CFF0858A}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Explorer5000", "Explorer5000\Explorer5000.csproj", "{A91A3B3E-70FB-4A75-8FCF-95FD0D68188A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataOperations", "DataDisplay\DataOperations.csproj", "{6B167897-4ACE-4A60-B1B4-25A6FA40E497}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleExplorer5000", "ConsoleExplorer5000\ConsoleExplorer5000.csproj", "{38CA6D51-906E-41AC-9077-519632B8BF8C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A91A3B3E-70FB-4A75-8FCF-95FD0D68188A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A91A3B3E-70FB-4A75-8FCF-95FD0D68188A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A91A3B3E-70FB-4A75-8FCF-95FD0D68188A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A91A3B3E-70FB-4A75-8FCF-95FD0D68188A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B167897-4ACE-4A60-B1B4-25A6FA40E497}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B167897-4ACE-4A60-B1B4-25A6FA40E497}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B167897-4ACE-4A60-B1B4-25A6FA40E497}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B167897-4ACE-4A60-B1B4-25A6FA40E497}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38CA6D51-906E-41AC-9077-519632B8BF8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38CA6D51-906E-41AC-9077-519632B8BF8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38CA6D51-906E-41AC-9077-519632B8BF8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38CA6D51-906E-41AC-9077-519632B8BF8C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
